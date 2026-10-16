@@ -1,0 +1,62 @@
+<div class="department-container">
+  <div class="metrics-row">
+    <div class="metric-card">
+      <span class="metric-title">Total Departments</span>
+      <span class="metric-value">14</span>
+      <span class="metric-sub stable">● Stable </span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-title" style="color: green;">Active Systems</span>
+      <span class="metric-value">13</span>
+      <span class="metric-sub positive">▲ Fully Operational</span>
+    </div>
+    <div class="metric-card">
+      <span class="metric-title" style="color:darkred;">InActive Systems</span>
+      <span class="metric-value">1</span>
+      <span class="metric-sub negative">⚠️ Required Action</span>
+    </div>
+  </div>
+
+  <div class="table-toolbar">
+    <h2>Department Directory</h2>
+    <div class="search-box">
+      <input type="text" [(ngModel)]="searchTerm" (input)="filterDepartments()"
+        placeholder="Search by ID,name or head..." />
+
+    </div>
+  </div>
+
+  <div class="grid-card">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Department ID</th>
+          <th>Department Name</th>
+          <th>Department Head</th>
+          <th>Total Employees</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (dept of filteredDepartments; track dept.id){
+        <tr>
+          <td class="id-text">{{dept.id}}</td>
+          <td class="primary-text">{{dept.name}}</td>
+          <td>{{dept.head}}</td>
+          <td>{{dept.totalEmployees}}</td>
+          <td>
+            <span class="badge" [ngClass]="dept.status.toLowerCase()">
+              {{dept.status}}
+            </span>
+          </td>
+        </tr>
+        }@empty {<tr>
+          @if(filteredDepartments.length === 0){
+          <td colspan="5" class="empty-state">No departments match your current filter search</td>
+          }
+        </tr>}
+      </tbody>
+    </table>
+  </div>
+
+</div>

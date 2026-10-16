@@ -1,0 +1,158 @@
+.main-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #afc6d3fd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+/* Brand/Logo */
+.nav-brand a {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e293b;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+/* Middle Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  gap: 40px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #191a1d;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  padding: 8px 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active-link {
+  color: #3b82f6; /* Accent Blue Color */
+  border-bottom: 2px solid #3b82f6;
+}
+
+/* Right Side Actions / Login Button */
+.login-btn {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3b82f6;
+  padding: 8px 20px;
+
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 20px !important;
+  margin: 0;
+}
+
+.login-btn:hover {
+  background-color: #2563eb;
+}
+
+.login-btn.active-login {
+  background-color: #1d4ed8;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+navbar-header {
+  background-color: #1e293b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: sans-serif;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+.navbar-logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-item {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.nav-item:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.active-link {
+  color: #38bdf8 !important;
+  font-weight: bold;
+}
+.login-btn {
+  background-color: #2563eb;
+  color: #ffffff !important;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background-color: #1d4ed8;
+}
+.logout-color {
+  background-color: #dc2626 !important;
+}
+.logout-color:hover {
+  background-color: #b91c1c !important;
+}
+.nav-toggle,
+.nav-toggle-label {
+  display: none;
+}
+
+.nav-links li a.active-Link {
+  color: #5a4c68f5 !important;
+  font-weight: bold !important;
+}
+
+.nav-links li a.active-Link:hover {
+  color: #3b82f6 !important;
+  opacity: 0.9;
+}

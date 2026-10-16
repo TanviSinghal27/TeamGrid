@@ -1,0 +1,25 @@
+<header class="main-header">
+  <nav class="navbar">
+    <div class="nav-brand"><a routerLink="/">TeamGrid</a></div>
+    <ul class="nav-links">
+      <li><a routerLink='/dashboard' routerLinkActive="active-Link">Home</a></li>
+      <li><a routerLink='/employees' routerLinkActive="active-Link">Employee</a></li>
+      <li><a routerLink='/department' routerLinkActive="active-Link">Department</a></li>
+      <li><a routerLink='/about' routerLinkActive="active-Link">About</a></li>
+      <li [style.visibility]="isLoggedIn()?'visible':'hidden'"><a (click)="logout()"
+          class="nav-item login-btn logout-color">LogOut</a></li>
+    </ul>
+
+    <!-- <div class="nav-actions">
+      <a routerLink="/signUp" class="login-btn" routerLinkActive="active-Link">Sign Up</a>
+    </div> -->
+    <!-- @if(!isLoggedIn()){ -->
+    <!-- <a routerLink="/login" routerLinkActive="active-link" class="nav-item login-btn">Login</a>
+    }@else { -->
+    <!-- <a (click)="logout()" class="nav-item login-btn logout-color">LogOut</a>
+    } -->
+
+
+  </nav>
+
+</header>
