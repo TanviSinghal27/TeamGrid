@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './about.css',
   templateUrl: './about.html',
 })
-export class About {}
+export class About {
+  systemVersion: string = 'v1.4.2.stable';
+  developerAccount: string = 'ansittanvi149';
+  buildStatus: string = 'Angular Frontend Architecture';
+  releaseDate: string = 'October 2026';
+}

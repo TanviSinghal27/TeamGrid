@@ -1,0 +1,112 @@
+.employee-container {
+  padding: 24px;
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-toolbar h2 {
+  font-size: 22px;
+  color: #2d3748;
+  margin: 0;
+  font-weight: 700;
+}
+
+.search-box input {
+  padding: 10px 16px !important;
+  width: 320px !important;
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e0 !important;
+  border-radius: 6px !important;
+  font-size: 14px !important;
+  color: #2d3748 !important;
+  outline: none !important;
+}
+
+.search-box input:focus {
+  border-color: #4a90e2 !important;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15) !important;
+}
+
+.grid-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #1e60aa;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px 20px;
+}
+
+.data-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.id-text {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
+.primary-text {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* Status Configuration Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  display: inline-block !important;
+  min-width: 80px !important;
+  text-align: center !important;
+}
+
+.badge.active {
+  background-color: #c6f6d5 !important;
+  color: #22543d !important;
+}
+.badge.leave {
+  background-color: #feebc8 !important;
+  color: #744210 !important;
+}
+.badge.terminated {
+  background-color: #fed7d7;
+  color: #9b2c2c;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px !important;
+  color: #a0aec0;
+  font-style: italic;
+}
+
+.data-table th:nth-of-type(5),
+.data-table td:nth-of-type(5) {
+  text-align: center;
+}

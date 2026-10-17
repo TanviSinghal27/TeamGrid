@@ -1,0 +1,113 @@
+/* .about-container {
+  padding: 40px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f8;
+  min-height: calc(100vh - 80px);
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+} */
+.about-container {
+  padding: 24px;
+
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f4f6f8;
+  min-height: calc(100vh - 80px);
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Matching the main TeamGrid dark blue header bar */
+.about-header {
+  background-color: #1e60aa;
+  padding: 24px;
+  color: #ffffff;
+}
+
+.about-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 6px 0 0 0;
+  font-size: 13px;
+  color: #e2e8f0;
+}
+
+.about-body {
+  padding: 24px;
+  color: #4a5568;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.description {
+  margin-bottom: 24px;
+}
+
+.metadata-section {
+  border-top: 1px solid #edf2f7;
+  padding-top: 20px;
+}
+
+.metadata-section h3 {
+  font-size: 16px;
+  color: #2d3748;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dotted #edf2f7;
+  font-size: 14px;
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+}
+
+.meta-label {
+  color: #718096;
+  font-weight: 500;
+}
+
+.meta-value {
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.developer-name {
+  color: #1e60aa;
+}
+
+.version-tag {
+  background-color: #edf2f7;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+}
