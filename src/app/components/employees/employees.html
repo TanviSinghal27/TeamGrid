@@ -14,6 +14,10 @@
           <th>Name</th>
           <th>Department</th>
           <th>Role</th>
+          <th (click)="sortEmployeesBySalary()" style="cursor: pointer; user-select: none;">Salary
+            <span class="sort-indicator"
+              [class.inactive]="currentSortOrder===''">{{currentSortOrder=='asc'?'▲':currentSortOrder==='desc'?'▼':'⇅'}}</span>
+          </th>
           <th>Status</th>
         </tr>
       </thead>
@@ -24,6 +28,7 @@
           <td class="primary-text">{{emp.name}}</td>
           <td>{{emp.department}}</td>
           <td>{{emp.role}}</td>
+          <td>{{emp.salary}}</td>
           <td>
             <span class=" badge" [ngClass]="emp.status.toLowerCase()">
               {{emp.status}}
@@ -37,5 +42,9 @@
         }
       </tbody>
     </table>
+  </div>
+  <div class="record-count">
+    Showing <strong>{{filteredEmployees.length}}</strong> of {{employees.length}} records
+    @if(searchTerm && filteredEmployees.length!== employees.length){<span class="filtered-tag">(filtered)</span>}
   </div>
 </div>

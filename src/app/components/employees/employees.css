@@ -110,3 +110,34 @@
 .data-table td:nth-of-type(5) {
   text-align: center;
 }
+
+.sort-indicator {
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin-left: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.record-count {
+  margin-top: 12px;
+  padding: 8px 4px;
+  font-size: 0.9rem;
+  color: #4a5568;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.record-count strong {
+  color: #1a202c;
+  margin: 0 4px;
+  font-weight: 600;
+}
+
+.filter-tag {
+  color: #e53e3e;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-left: 6px;
+}
